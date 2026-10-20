@@ -66,3 +66,7 @@ Sample body (use a product id that exists in product-service, e.g. `1`):
   "quantity": 2
 }
 ```
+
+## Hello World app for AWS ECS
+
+`hello-world-app/` is a separate Spring Boot Hello World REST API. It comes with a `Dockerfile`, `buildspec.yaml`, `appspec.yaml` and `taskdef.json` for deploying to Amazon ECS through CodeCommit, CodeBuild, ECR, CodeDeploy and CodePipeline. See [hello-world-app/README.md](hello-world-app/README.md) for the step-by-step guide. [hello-world-app.zip](hello-world-app.zip) contains the same code, ready to push to a new CodeCommit repository.
